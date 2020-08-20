@@ -25,9 +25,10 @@ depends-top-level:
 - "View"
 depends-member:
 - !private ["18PublishedToBinding11ContentViewV", "deinit"]
+- !private ["18PublishedToBinding11ContentViewV", "environmentObject"]
 - !private ["18PublishedToBinding11ContentViewV", "init"]
-- !private ["18PublishedToBinding11ContentViewV", "onAppear"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["SQ", "init"]
 - ["18PublishedToBinding8HomePageV", "$viewModel"]
 - ["18PublishedToBinding8HomePageV", "Body"]
@@ -61,9 +62,10 @@ depends-member:
 - ["18PublishedToBinding17HomePage_PreviewsV", "previews"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
-- !private ["7Combine16ObservableObjectP", "init"]
+- ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "resetCancel"]
 - ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["7SwiftUI15PreviewProviderP", "HomePage"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "PurchaseSuccessful"]
@@ -74,7 +76,7 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
-- !private ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "resetCancel"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - !private ["7SwiftUI4TextV", "init"]
@@ -84,6 +86,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
+- ["7SwiftUI4ViewP", "PurchaseSuccessful"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -92,6 +95,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
@@ -113,7 +117,7 @@ depends-nominal:
 - "18PublishedToBinding17HomePage_PreviewsV"
 - !private "7SwiftUI14NavigationLinkV"
 - !private "7SwiftUI14NavigationViewV"
-- !private "7Combine16ObservableObjectP"
+- "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - "7SwiftUI15PreviewProviderP"
 - "18PublishedToBinding18PurchaseSuccessfulC"
@@ -156,4 +160,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f2b1fd4beca5371bcdc777f8f0e2b2ee"
+interface-hash: "cef08744a4d3993db681ba81b244870c"

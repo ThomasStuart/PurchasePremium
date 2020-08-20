@@ -64,14 +64,14 @@
 			children = (
 				96EB0DDB24EDE69B001BA039 /* AppDelegate.swift */,
 				96EB0DDD24EDE69B001BA039 /* SceneDelegate.swift */,
-				96EB0DDF24EDE69B001BA039 /* ContentView.swift */,
+				96EB0DF124EDE732001BA039 /* Subscribe.swift */,
 				9660A27A24EE02D8006FA795 /* HomePage.swift */,
+				96EB0DEF24EDE6C7001BA039 /* PremiumPage.swift */,
+				96EB0DDF24EDE69B001BA039 /* ContentView.swift */,
 				96EB0DE124EDE69D001BA039 /* Assets.xcassets */,
 				96EB0DE624EDE69D001BA039 /* LaunchScreen.storyboard */,
 				96EB0DE924EDE69D001BA039 /* Info.plist */,
 				96EB0DE324EDE69D001BA039 /* Preview Content */,
-				96EB0DEF24EDE6C7001BA039 /* PremiumPage.swift */,
-				96EB0DF124EDE732001BA039 /* Subscribe.swift */,
 			);
 			path = PublishedToBinding;
 			sourceTree = "<group>";

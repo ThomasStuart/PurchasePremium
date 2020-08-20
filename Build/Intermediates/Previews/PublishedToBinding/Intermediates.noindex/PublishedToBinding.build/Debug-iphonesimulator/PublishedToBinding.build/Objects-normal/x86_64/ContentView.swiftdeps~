@@ -12,13 +12,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "&&"
+- !private "AssignmentPrecedence"
+- "Binding"
+- "Bool"
 - !private "BooleanLiteralType"
+- !private "Button"
 - "ContentView"
 - "ContentView_Previews"
-- "DragGesture"
-- !private "HomePage"
-- !private "NavigationLink"
-- "ObservedObject"
+- "EnvironmentObject"
 - !private "PremiumPage"
 - "PreviewProvider"
 - "PurchaseSuccessful"
@@ -27,12 +28,15 @@ depends-top-level:
 - "View"
 - "ViewBuilder"
 depends-member:
+- !private ["7SwiftUI7BindingV", "constant"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- ["18PublishedToBinding11ContentViewV", "$rootIsActive"]
 - ["18PublishedToBinding11ContentViewV", "$viewModel"]
+- ["18PublishedToBinding11ContentViewV", "Binding"]
 - ["18PublishedToBinding11ContentViewV", "Body"]
-- ["18PublishedToBinding11ContentViewV", "DragGesture"]
-- !private ["18PublishedToBinding11ContentViewV", "HomePage"]
-- !private ["18PublishedToBinding11ContentViewV", "NavigationLink"]
-- ["18PublishedToBinding11ContentViewV", "ObservedObject"]
+- ["18PublishedToBinding11ContentViewV", "Bool"]
+- !private ["18PublishedToBinding11ContentViewV", "Button"]
+- ["18PublishedToBinding11ContentViewV", "EnvironmentObject"]
 - !private ["18PublishedToBinding11ContentViewV", "PremiumPage"]
 - ["18PublishedToBinding11ContentViewV", "PurchaseSuccessful"]
 - !private ["18PublishedToBinding11ContentViewV", "Text"]
@@ -41,11 +45,13 @@ depends-member:
 - ["18PublishedToBinding11ContentViewV", "_Default_Body"]
 - ["18PublishedToBinding11ContentViewV", "_makeView"]
 - ["18PublishedToBinding11ContentViewV", "_makeViewList"]
+- !private ["18PublishedToBinding11ContentViewV", "_rootIsActive"]
 - !private ["18PublishedToBinding11ContentViewV", "_viewModel"]
 - ["18PublishedToBinding11ContentViewV", "body"]
 - ["18PublishedToBinding11ContentViewV", "deinit"]
-- ["18PublishedToBinding11ContentViewV", "dragGesture"]
+- !private ["18PublishedToBinding11ContentViewV", "environmentObject"]
 - ["18PublishedToBinding11ContentViewV", "init"]
+- ["18PublishedToBinding11ContentViewV", "rootIsActive"]
 - ["18PublishedToBinding11ContentViewV", "viewModel"]
 - !private ["18PublishedToBinding20ContentView_PreviewsV", "ContentView"]
 - ["18PublishedToBinding20ContentView_PreviewsV", "Previews"]
@@ -58,19 +64,15 @@ depends-member:
 - ["18PublishedToBinding20ContentView_PreviewsV", "init"]
 - ["18PublishedToBinding20ContentView_PreviewsV", "platform"]
 - ["18PublishedToBinding20ContentView_PreviewsV", "previews"]
-- ["7SwiftUI11DragGestureV", "init"]
+- !private ["7SwiftUI15DynamicPropertyP", "constant"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
-- ["7SwiftUI7GestureP", "init"]
-- !private ["18PublishedToBinding8HomePageV", "deinit"]
-- !private ["18PublishedToBinding8HomePageV", "init"]
-- !private ["7SwiftUI14NavigationLinkV", "init"]
-- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isPremium"]
 - !private ["7Combine16ObservableObjectP", "userCancelled"]
-- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["18PublishedToBinding11PremiumPageV", "deinit"]
+- !private ["18PublishedToBinding11PremiumPageV", "environmentObject"]
 - !private ["18PublishedToBinding11PremiumPageV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -86,11 +88,10 @@ depends-member:
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "isPremium"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "userCancelled"]
 - !private ["7SwiftUI4TextV", "init"]
+- ["7SwiftUI4ViewP", "Binding"]
 - ["7SwiftUI4ViewP", "Body"]
-- ["7SwiftUI4ViewP", "DragGesture"]
-- !private ["7SwiftUI4ViewP", "HomePage"]
-- !private ["7SwiftUI4ViewP", "NavigationLink"]
-- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "PremiumPage"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", "ViewBuilder"]
@@ -99,8 +100,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
+- !private ["7SwiftUI4ViewP", "rootIsActive"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
@@ -114,16 +116,14 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- !private "7SwiftUI7BindingV"
+- !private "7SwiftUI6ButtonV"
 - "18PublishedToBinding11ContentViewV"
 - "18PublishedToBinding20ContentView_PreviewsV"
-- "7SwiftUI11DragGestureV"
 - "7SwiftUI15DynamicPropertyP"
+- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
-- "7SwiftUI7GestureP"
-- !private "18PublishedToBinding8HomePageV"
-- !private "7SwiftUI14NavigationLinkV"
 - !private "7Combine16ObservableObjectP"
-- "7SwiftUI14ObservedObjectV"
 - !private "18PublishedToBinding11PremiumPageV"
 - "7SwiftUI15PreviewProviderP"
 - "18PublishedToBinding18PurchaseSuccessfulC"
@@ -164,4 +164,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b4eaf575669fa23f9e516eb29a89b279"
+interface-hash: "e3699d84112a348f99b2ebf17abf0976"

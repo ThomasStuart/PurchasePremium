@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct PremiumPage: View {
-    @ObservedObject var viewModel: PurchaseSuccessful
+    @EnvironmentObject var viewModel: PurchaseSuccessful
+    @Binding var shouldPopToRootView : Bool
     
     var body: some View {
         VStack(spacing: 50 ){
@@ -23,6 +24,7 @@ struct PremiumPage: View {
                 
                 Button(action: {
                     self.viewModel.cancel()
+                    self.shouldPopToRootView = false
                 }) {
                     Text("Cancel")
                 }
@@ -33,6 +35,6 @@ struct PremiumPage: View {
 
 struct PremiumPage_Previews: PreviewProvider {
     static var previews: some View {
-        PremiumPage(viewModel: PurchaseSuccessful() ) //.environmentObject(PurchaseSuccessful())
+        PremiumPage(shouldPopToRootView: .constant(false)).environmentObject(PurchaseSuccessful())
     }
 }

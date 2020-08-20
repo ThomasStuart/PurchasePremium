@@ -11,9 +11,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "Button"
+- "EnvironmentObject"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
-- "ObservedObject"
 - "PremiumPage"
 - "PremiumPage_Previews"
 - "PreviewProvider"
@@ -25,15 +25,15 @@ depends-top-level:
 depends-member:
 - !private ["7SwiftUI6ButtonV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
 - !private ["7Combine16ObservableObjectP", "buyMembership"]
 - !private ["7Combine16ObservableObjectP", "cancel"]
 - !private ["7Combine16ObservableObjectP", "init"]
-- ["7SwiftUI14ObservedObjectV", "init"]
 - ["18PublishedToBinding11PremiumPageV", "$viewModel"]
 - ["18PublishedToBinding11PremiumPageV", "Body"]
 - !private ["18PublishedToBinding11PremiumPageV", "Button"]
-- ["18PublishedToBinding11PremiumPageV", "ObservedObject"]
+- ["18PublishedToBinding11PremiumPageV", "EnvironmentObject"]
 - ["18PublishedToBinding11PremiumPageV", "PurchaseSuccessful"]
 - !private ["18PublishedToBinding11PremiumPageV", "Text"]
 - !private ["18PublishedToBinding11PremiumPageV", "VStack"]
@@ -44,6 +44,7 @@ depends-member:
 - !private ["18PublishedToBinding11PremiumPageV", "_viewModel"]
 - ["18PublishedToBinding11PremiumPageV", "body"]
 - ["18PublishedToBinding11PremiumPageV", "deinit"]
+- !private ["18PublishedToBinding11PremiumPageV", "environmentObject"]
 - ["18PublishedToBinding11PremiumPageV", "init"]
 - ["18PublishedToBinding11PremiumPageV", "viewModel"]
 - !private ["18PublishedToBinding20PremiumPage_PreviewsV", "PremiumPage"]
@@ -74,7 +75,7 @@ depends-member:
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
-- ["7SwiftUI4ViewP", "ObservedObject"]
+- ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -82,6 +83,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -97,9 +99,9 @@ depends-member:
 depends-nominal:
 - !private "7SwiftUI6ButtonV"
 - "7SwiftUI15DynamicPropertyP"
+- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
 - !private "7Combine16ObservableObjectP"
-- "7SwiftUI14ObservedObjectV"
 - "18PublishedToBinding11PremiumPageV"
 - "18PublishedToBinding20PremiumPage_PreviewsV"
 - "7SwiftUI15PreviewProviderP"
@@ -142,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5d5aff6ba7641d35a133ceaceecc0820"
+interface-hash: "c1ddaca0bf6120bb0c9320a6c92f17a9"

@@ -5,8 +5,8 @@ import SwiftUI
 extension PremiumPage_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
         #sourceLocation(file: "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 36)
-        AnyView(__designTimeSelection(PremiumPage(viewModel: __designTimeSelection(PurchaseSuccessful(), "#8429.[2].[0].property.[0].[0].arg[0].value") ), "#8429.[2].[0].property.[0].[0]"))
-#sourceLocation() //.environmentObject(PurchaseSuccessful())
+        AnyView(__designTimeSelection(PremiumPage().environmentObject(__designTimeSelection(PurchaseSuccessful(), "#8429.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#8429.[2].[0].property.[0].[0]"))
+#sourceLocation()
     }
 }
 

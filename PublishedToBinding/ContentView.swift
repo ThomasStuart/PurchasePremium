@@ -9,24 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: PurchaseSuccessful
-    let dragGesture = DragGesture()
+    @EnvironmentObject var viewModel: PurchaseSuccessful
+    @Binding var rootIsActive : Bool
     
-      @ViewBuilder              // no need return inside
+      @ViewBuilder
       var body: some View {
         
-            if !viewModel.isPremium && !viewModel.userCancelled {
-                PremiumPage(viewModel: viewModel)
-              }
-            else if( !viewModel.isPremium && viewModel.userCancelled){
-                HomePage(viewModel: viewModel)
-            }
-            else {
-                  Text("Thanks for buying a subscription, heres your results")
-                  NavigationLink(destination: HomePage(viewModel: viewModel) ){
-                        Text("Go Back to home page")
-                }.navigationBarHidden(true)
-            }
+        //Text("hello")
+        if !self.viewModel.isPremium && !self.viewModel.userCancelled {
+            PremiumPage(shouldPopToRootView: self.$rootIsActive).environmentObject(viewModel)
+        }
+        else {
+              Text("Thanks for buying a subscription, heres your results")
+                Button (action: { self.rootIsActive = false } ){
+                    Text("Pop to root")
+                }
+        }
         
       }
     
@@ -34,18 +32,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: PurchaseSuccessful())//.environmentObject(PurchaseSuccessful())
+        ContentView(rootIsActive: .constant(false)).environmentObject(PurchaseSuccessful())
     }
 }
-
-
-//var body: some View {
-//    VStack{
-//        Text("Score Landing Page")
-//    }
-//    .sheet(isPresented: $viewModel.isNotPremium ) {
-//            PremiumPage()
-//                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//                .highPriorityGesture(self.dragGesture)
-//    }
-//}

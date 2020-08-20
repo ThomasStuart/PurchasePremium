@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct HomePage: View {
-    @ObservedObject var viewModel: PurchaseSuccessful
+    @ObservedObject var viewModel: PurchaseSuccessful = PurchaseSuccessful()
+    @State var isActive : Bool = false
     
     var body: some View {
         
@@ -17,11 +18,10 @@ struct HomePage: View {
             VStack {
                 Text("Home Page!")
                 Spacer()
-                NavigationLink(destination: ContentView(viewModel: viewModel).onAppear {
-                    self.viewModel.resetCancel()
-                }) {
-                    Text("Record Video and Get Results")
-                }
+                NavigationLink(destination: ContentView(rootIsActive: self.$isActive).environmentObject(viewModel).onAppear(){ self.viewModel.resetCancel()}  ,isActive: self.$isActive ){
+                        Text("Record Video and Get Results")
+                }.isDetailLink(false)
+                 .navigationBarTitle("Root")
             }
         }
         
