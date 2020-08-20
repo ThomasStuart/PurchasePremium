@@ -10,35 +10,33 @@ provides-member:
 - ["18PublishedToBinding20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
+- !private "&&"
 - "ContentView"
 - "ContentView_Previews"
 - "DragGesture"
-- "EnvironmentObject"
+- !private "HomePage"
+- !private "NavigationLink"
+- "ObservedObject"
 - !private "PremiumPage"
 - "PreviewProvider"
 - "PurchaseSuccessful"
 - !private "StringLiteralType"
 - !private "Text"
-- !private "UIScreen"
-- !private "VStack"
 - "View"
+- "ViewBuilder"
 depends-member:
-- !private ["7SwiftUI10AnimatableP", "height"]
-- !private ["7SwiftUI10AnimatableP", "width"]
-- !private ["So6CGRectV", "height"]
-- !private ["So6CGRectV", "width"]
-- !private ["s7CVarArgP", "bounds"]
-- !private ["s7CVarArgP", "main"]
 - ["18PublishedToBinding11ContentViewV", "$viewModel"]
 - ["18PublishedToBinding11ContentViewV", "Body"]
 - ["18PublishedToBinding11ContentViewV", "DragGesture"]
-- ["18PublishedToBinding11ContentViewV", "EnvironmentObject"]
+- !private ["18PublishedToBinding11ContentViewV", "HomePage"]
+- !private ["18PublishedToBinding11ContentViewV", "NavigationLink"]
+- ["18PublishedToBinding11ContentViewV", "ObservedObject"]
 - !private ["18PublishedToBinding11ContentViewV", "PremiumPage"]
 - ["18PublishedToBinding11ContentViewV", "PurchaseSuccessful"]
 - !private ["18PublishedToBinding11ContentViewV", "Text"]
-- !private ["18PublishedToBinding11ContentViewV", "UIScreen"]
-- !private ["18PublishedToBinding11ContentViewV", "VStack"]
 - ["18PublishedToBinding11ContentViewV", "View"]
+- ["18PublishedToBinding11ContentViewV", "ViewBuilder"]
 - ["18PublishedToBinding11ContentViewV", "_Default_Body"]
 - ["18PublishedToBinding11ContentViewV", "_makeView"]
 - ["18PublishedToBinding11ContentViewV", "_makeViewList"]
@@ -46,7 +44,6 @@ depends-member:
 - ["18PublishedToBinding11ContentViewV", "body"]
 - ["18PublishedToBinding11ContentViewV", "deinit"]
 - ["18PublishedToBinding11ContentViewV", "dragGesture"]
-- !private ["18PublishedToBinding11ContentViewV", "environmentObject"]
 - ["18PublishedToBinding11ContentViewV", "init"]
 - ["18PublishedToBinding11ContentViewV", "viewModel"]
 - !private ["18PublishedToBinding20ContentView_PreviewsV", "ContentView"]
@@ -60,37 +57,18 @@ depends-member:
 - ["18PublishedToBinding20ContentView_PreviewsV", "init"]
 - ["18PublishedToBinding20ContentView_PreviewsV", "platform"]
 - ["18PublishedToBinding20ContentView_PreviewsV", "previews"]
-- !private ["s28CustomDebugStringConvertibleP", "bounds"]
-- !private ["s28CustomDebugStringConvertibleP", "height"]
-- !private ["s28CustomDebugStringConvertibleP", "main"]
-- !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "width"]
-- !private ["s23CustomStringConvertibleP", "bounds"]
-- !private ["s23CustomStringConvertibleP", "main"]
-- !private ["Se", "height"]
-- !private ["Se", "width"]
 - ["7SwiftUI11DragGestureV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["SE", "height"]
-- !private ["SE", "width"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
-- !private ["SQ", "bounds"]
-- !private ["SQ", "height"]
 - !private ["SQ", "init"]
-- !private ["SQ", "main"]
-- !private ["SQ", "width"]
 - ["7SwiftUI7GestureP", "init"]
-- !private ["SH", "bounds"]
-- !private ["SH", "main"]
-- !private ["So8NSObjectC", "bounds"]
-- !private ["So8NSObjectC", "main"]
-- !private ["So8NSObjectP", "bounds"]
-- !private ["So8NSObjectP", "main"]
+- !private ["18PublishedToBinding8HomePageV", "deinit"]
+- !private ["18PublishedToBinding8HomePageV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isNotPremium"]
+- !private ["7Combine16ObservableObjectP", "userCancelled"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["18PublishedToBinding11PremiumPageV", "deinit"]
-- !private ["18PublishedToBinding11PremiumPageV", "frame"]
 - !private ["18PublishedToBinding11PremiumPageV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -104,42 +82,25 @@ depends-member:
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "isNotPremium"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "userCancelled"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["So8UIScreenC", "bounds"]
-- !private ["So8UIScreenC", "main"]
-- !private ["So18UITraitEnvironmentP", "bounds"]
-- !private ["So18UITraitEnvironmentP", "main"]
-- !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI6VStackV", "sheet"]
-- !private ["7SwiftUI4ViewP", "$viewModel"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "DragGesture"]
-- ["7SwiftUI4ViewP", "EnvironmentObject"]
+- !private ["7SwiftUI4ViewP", "HomePage"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "PremiumPage"]
 - !private ["7SwiftUI4ViewP", "Text"]
-- !private ["7SwiftUI4ViewP", "UIScreen"]
-- !private ["7SwiftUI4ViewP", "VStack"]
+- ["7SwiftUI4ViewP", "ViewBuilder"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "dragGesture"]
-- !private ["7SwiftUI4ViewP", "environmentObject"]
-- !private ["7SwiftUI4ViewP", "frame"]
-- !private ["7SwiftUI4ViewP", "highPriorityGesture"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "sheet"]
-- !private ["7SwiftUI17EnvironmentObjectV7WrapperV", "isNotPremium"]
-- !private ["7SwiftUI17EnvironmentObjectV7WrapperV", "subscript"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
-- !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["7SwiftUI4ViewP", "viewModel"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "PurchaseSuccessful"]
@@ -150,38 +111,22 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "7SwiftUI10AnimatableP"
-- !private "So6CGRectV"
-- !private "s7CVarArgP"
 - "18PublishedToBinding11ContentViewV"
 - "18PublishedToBinding20ContentView_PreviewsV"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "Se"
 - "7SwiftUI11DragGestureV"
 - "7SwiftUI15DynamicPropertyP"
-- !private "SE"
-- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
 - "7SwiftUI7GestureP"
-- !private "SH"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
+- !private "18PublishedToBinding8HomePageV"
+- !private "7SwiftUI14NavigationLinkV"
 - !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "18PublishedToBinding11PremiumPageV"
 - "7SwiftUI15PreviewProviderP"
 - "18PublishedToBinding18PurchaseSuccessfulC"
 - !private "7SwiftUI4TextV"
-- !private "So8UIScreenC"
-- !private "So18UITraitEnvironmentP"
-- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
-- !private "7SwiftUI17EnvironmentObjectV7WrapperV"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
+- !private "7SwiftUI11ViewBuilderV"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -216,4 +161,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b7675f16487e93b48f130e76dfa8463d"
+interface-hash: "b4eaf575669fa23f9e516eb29a89b279"

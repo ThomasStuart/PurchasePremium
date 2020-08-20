@@ -9,23 +9,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: PurchaseSuccessful
+    @ObservedObject var viewModel: PurchaseSuccessful
     let dragGesture = DragGesture()
     
-    var body: some View {
-        VStack{
-            Text("Score Landing Page")
+      @ViewBuilder              // no need return inside
+      var body: some View {
+        
+        if viewModel.isNotPremium && !viewModel.userCancelled {
+            PremiumPage(viewModel: viewModel)
+          }
+        else if (viewModel.isNotPremium && viewModel.userCancelled){
+            HomePage(viewModel: viewModel)
         }
-        .sheet(isPresented: $viewModel.isNotPremium ) {
-                PremiumPage()
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                    .highPriorityGesture(self.dragGesture)
+        else {
+              Text("Score Landing Page")
+              NavigationLink(destination: HomePage(viewModel: viewModel) ){
+                    Text("Show Detail View")
+             }
         }
-    }
+        
+      }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(PurchaseSuccessful())
+        ContentView(viewModel: PurchaseSuccessful())//.environmentObject(PurchaseSuccessful())
     }
 }
+
+
+//var body: some View {
+//    VStack{
+//        Text("Score Landing Page")
+//    }
+//    .sheet(isPresented: $viewModel.isNotPremium ) {
+//            PremiumPage()
+//                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+//                .highPriorityGesture(self.dragGesture)
+//    }
+//}

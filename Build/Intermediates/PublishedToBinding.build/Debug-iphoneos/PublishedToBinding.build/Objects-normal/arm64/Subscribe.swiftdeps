@@ -7,32 +7,51 @@ provides-member:
 - ["18PublishedToBinding18PurchaseSuccessfulC", ""]
 provides-dynamic-lookup:
 - "$isNotPremium"
+- "$userCancelled"
 - "_isNotPremium"
+- "_userCancelled"
+- "buyMembership"
+- "cancel"
 - "isNotPremium"
+- "resetCancel"
+- "userCancelled"
 depends-top-level:
+- "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "ObservableObject"
 - "Published"
 - "PurchaseSuccessful"
+- !private "StringLiteralType"
+- !private "print"
 depends-member:
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Published"]
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_isNotPremium"]
+- !private ["7Combine16ObservableObjectP", "_userCancelled"]
 - !private ["7Combine16ObservableObjectP", "isNotPremium"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
+- !private ["7Combine16ObservableObjectP", "print"]
+- !private ["7Combine16ObservableObjectP", "userCancelled"]
 - ["7Combine9PublishedV", "init"]
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "$isNotPremium"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "$userCancelled"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "ObjectWillChangePublisher"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "Published"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "_Default_ObjectWillChangePublisher"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "_isNotPremium"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "_userCancelled"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "buyMembership"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "cancel"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "isNotPremium"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "objectWillChange"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "print"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "resetCancel"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "userCancelled"]
 depends-nominal:
 - "7Combine16ObservableObjectP"
 - "7Combine9PublishedV"
@@ -70,4 +89,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9c8ee2e618fe5cdac9919528e22cc95c"
+interface-hash: "0a973e439053907b9d2fbcf288c109c9"

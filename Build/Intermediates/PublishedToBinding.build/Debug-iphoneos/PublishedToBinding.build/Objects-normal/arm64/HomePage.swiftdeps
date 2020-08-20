@@ -1,63 +1,70 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "PremiumPage"
-- "PremiumPage_Previews"
+- "HomePage"
+- "HomePage_Previews"
 provides-nominal:
-- "18PublishedToBinding11PremiumPageV"
-- "18PublishedToBinding20PremiumPage_PreviewsV"
+- "18PublishedToBinding8HomePageV"
+- "18PublishedToBinding17HomePage_PreviewsV"
 provides-member:
-- ["18PublishedToBinding11PremiumPageV", ""]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", ""]
+- ["18PublishedToBinding8HomePageV", ""]
+- ["18PublishedToBinding17HomePage_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Button"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
+- !private "ContentView"
+- "HomePage"
+- "HomePage_Previews"
+- !private "NavigationLink"
+- !private "NavigationView"
 - "ObservedObject"
-- "PremiumPage"
-- "PremiumPage_Previews"
 - "PreviewProvider"
 - "PurchaseSuccessful"
+- !private "Spacer"
 - !private "StringLiteralType"
 - !private "Text"
 - !private "VStack"
 - "View"
 depends-member:
-- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["18PublishedToBinding11ContentViewV", "deinit"]
+- !private ["18PublishedToBinding11ContentViewV", "init"]
+- !private ["18PublishedToBinding11ContentViewV", "onAppear"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SQ", "init"]
-- !private ["7Combine16ObservableObjectP", "buyMembership"]
-- !private ["7Combine16ObservableObjectP", "cancel"]
+- ["18PublishedToBinding8HomePageV", "$viewModel"]
+- ["18PublishedToBinding8HomePageV", "Body"]
+- !private ["18PublishedToBinding8HomePageV", "ContentView"]
+- !private ["18PublishedToBinding8HomePageV", "NavigationLink"]
+- !private ["18PublishedToBinding8HomePageV", "NavigationView"]
+- ["18PublishedToBinding8HomePageV", "ObservedObject"]
+- ["18PublishedToBinding8HomePageV", "PurchaseSuccessful"]
+- !private ["18PublishedToBinding8HomePageV", "Spacer"]
+- !private ["18PublishedToBinding8HomePageV", "Text"]
+- !private ["18PublishedToBinding8HomePageV", "VStack"]
+- ["18PublishedToBinding8HomePageV", "View"]
+- ["18PublishedToBinding8HomePageV", "_Default_Body"]
+- ["18PublishedToBinding8HomePageV", "_makeView"]
+- ["18PublishedToBinding8HomePageV", "_makeViewList"]
+- !private ["18PublishedToBinding8HomePageV", "_viewModel"]
+- ["18PublishedToBinding8HomePageV", "body"]
+- ["18PublishedToBinding8HomePageV", "deinit"]
+- ["18PublishedToBinding8HomePageV", "init"]
+- ["18PublishedToBinding8HomePageV", "viewModel"]
+- !private ["18PublishedToBinding17HomePage_PreviewsV", "HomePage"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "Previews"]
+- !private ["18PublishedToBinding17HomePage_PreviewsV", "PurchaseSuccessful"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "View"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_Default_Previews"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_platform"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_previews"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "deinit"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "init"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "platform"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "previews"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "resetCancel"]
 - ["7SwiftUI14ObservedObjectV", "init"]
-- ["18PublishedToBinding11PremiumPageV", "$viewModel"]
-- ["18PublishedToBinding11PremiumPageV", "Body"]
-- !private ["18PublishedToBinding11PremiumPageV", "Button"]
-- ["18PublishedToBinding11PremiumPageV", "ObservedObject"]
-- ["18PublishedToBinding11PremiumPageV", "PurchaseSuccessful"]
-- !private ["18PublishedToBinding11PremiumPageV", "Text"]
-- !private ["18PublishedToBinding11PremiumPageV", "VStack"]
-- ["18PublishedToBinding11PremiumPageV", "View"]
-- ["18PublishedToBinding11PremiumPageV", "_Default_Body"]
-- ["18PublishedToBinding11PremiumPageV", "_makeView"]
-- ["18PublishedToBinding11PremiumPageV", "_makeViewList"]
-- !private ["18PublishedToBinding11PremiumPageV", "_viewModel"]
-- ["18PublishedToBinding11PremiumPageV", "body"]
-- ["18PublishedToBinding11PremiumPageV", "deinit"]
-- ["18PublishedToBinding11PremiumPageV", "init"]
-- ["18PublishedToBinding11PremiumPageV", "viewModel"]
-- !private ["18PublishedToBinding20PremiumPage_PreviewsV", "PremiumPage"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "Previews"]
-- !private ["18PublishedToBinding20PremiumPage_PreviewsV", "PurchaseSuccessful"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "View"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "_Default_Previews"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "_platform"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "_previews"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "deinit"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "init"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "platform"]
-- ["18PublishedToBinding20PremiumPage_PreviewsV", "previews"]
-- !private ["7SwiftUI15PreviewProviderP", "PremiumPage"]
+- !private ["7SwiftUI15PreviewProviderP", "HomePage"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "PurchaseSuccessful"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -66,15 +73,18 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["18PublishedToBinding18PurchaseSuccessfulC", "buyMembership"]
-- !private ["18PublishedToBinding18PurchaseSuccessfulC", "cancel"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "resetCancel"]
+- !private ["7SwiftUI6SpacerV", "init"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "ContentView"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -83,9 +93,10 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["7SwiftUI16_PreviewProviderP", "PremiumPage"]
+- !private ["7SwiftUI16_PreviewProviderP", "HomePage"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "PurchaseSuccessful"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -95,15 +106,18 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "7SwiftUI6ButtonV"
+- !private "18PublishedToBinding11ContentViewV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SQ"
+- "18PublishedToBinding8HomePageV"
+- "18PublishedToBinding17HomePage_PreviewsV"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
-- "18PublishedToBinding11PremiumPageV"
-- "18PublishedToBinding20PremiumPage_PreviewsV"
 - "7SwiftUI15PreviewProviderP"
 - "18PublishedToBinding18PurchaseSuccessfulC"
+- !private "7SwiftUI6SpacerV"
 - !private "7SwiftUI4TextV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
@@ -142,4 +156,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5d5aff6ba7641d35a133ceaceecc0820"
+interface-hash: "f2b1fd4beca5371bcdc777f8f0e2b2ee"

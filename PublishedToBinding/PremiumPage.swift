@@ -9,24 +9,30 @@
 import SwiftUI
 
 struct PremiumPage: View {
-    @EnvironmentObject var viewModel: PurchaseSuccessful
-     let dragGesture = DragGesture()
+    @ObservedObject var viewModel: PurchaseSuccessful
+    
     var body: some View {
-       
-        
         VStack(spacing: 50 ){
             Text("Premium Page!")
-            
-//            Toggle(isOn: $viewModel.isNotPremium) {
-//                Text("I agree to the terms and conditions")
-//            }
-        }   .highPriorityGesture(self.dragGesture)
+                
+                Button(action: {
+                    self.viewModel.buyMembership()
+                }) {
+                    Text("Buy Subscription")
+                }
+                
+                Button(action: {
+                    self.viewModel.cancel()
+                }) {
+                    Text("Cancel")
+                }
+        }
         
     }
 }
 
 struct PremiumPage_Previews: PreviewProvider {
     static var previews: some View {
-        PremiumPage().environmentObject(PurchaseSuccessful())
+        PremiumPage(viewModel: PurchaseSuccessful() ) //.environmentObject(PurchaseSuccessful())
     }
 }

@@ -11,4 +11,21 @@ import Combine
 
 final class PurchaseSuccessful: ObservableObject {
     @Published var isNotPremium = true
+    @Published var userCancelled = false
+    
+    func buyMembership() {
+        // login request... on success:
+        print("buy membership clicked")
+        self.isNotPremium = false
+    }
+
+    func cancel() {
+        // login request... on success:
+        print("cancel clicked")
+        self.userCancelled = true
+    }
+    
+    func resetCancel(){
+        self.userCancelled = false
+    }
 }
