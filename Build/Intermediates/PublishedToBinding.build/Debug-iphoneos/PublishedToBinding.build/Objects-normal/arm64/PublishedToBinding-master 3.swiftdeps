@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "1e1d14f6c5f875585a5134c57d375c2f"
-build_time: [1597880551, 717705000]
-inputs:
-  "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/Subscribe.swift": [1597879290, 806349150]
-  "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/PremiumPage.swift": [1597880543, 17312098]
-  "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/AppDelegate.swift": [1597878043, 478227592]
-  "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/SceneDelegate.swift": [1597879678, 943181875]
-  "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/ContentView.swift": [1597880516, 350692590]

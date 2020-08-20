@@ -10,19 +10,17 @@ import SwiftUI
 
 struct PremiumPage: View {
     @EnvironmentObject var viewModel: PurchaseSuccessful
-    
+     let dragGesture = DragGesture()
     var body: some View {
        
         
         VStack(spacing: 50 ){
             Text("Premium Page!")
             
-//            Button(action: {
-//                self.viewModel.isPremium = true
-//            }) {
-//                Text("Buy Monthly Membership")
+//            Toggle(isOn: $viewModel.isNotPremium) {
+//                Text("I agree to the terms and conditions")
 //            }
-        }
+        }   .highPriorityGesture(self.dragGesture)
         
     }
 }

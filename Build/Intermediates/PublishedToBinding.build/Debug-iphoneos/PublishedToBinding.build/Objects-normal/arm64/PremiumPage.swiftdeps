@@ -10,6 +10,7 @@ provides-member:
 - ["18PublishedToBinding20PremiumPage_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "DragGesture"
 - "EnvironmentObject"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
@@ -22,12 +23,15 @@ depends-top-level:
 - !private "VStack"
 - "View"
 depends-member:
+- ["7SwiftUI11DragGestureV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
+- ["7SwiftUI7GestureP", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - ["18PublishedToBinding11PremiumPageV", "$viewModel"]
 - ["18PublishedToBinding11PremiumPageV", "Body"]
+- ["18PublishedToBinding11PremiumPageV", "DragGesture"]
 - ["18PublishedToBinding11PremiumPageV", "EnvironmentObject"]
 - ["18PublishedToBinding11PremiumPageV", "PurchaseSuccessful"]
 - !private ["18PublishedToBinding11PremiumPageV", "Text"]
@@ -39,6 +43,7 @@ depends-member:
 - !private ["18PublishedToBinding11PremiumPageV", "_viewModel"]
 - ["18PublishedToBinding11PremiumPageV", "body"]
 - ["18PublishedToBinding11PremiumPageV", "deinit"]
+- ["18PublishedToBinding11PremiumPageV", "dragGesture"]
 - !private ["18PublishedToBinding11PremiumPageV", "environmentObject"]
 - ["18PublishedToBinding11PremiumPageV", "init"]
 - ["18PublishedToBinding11PremiumPageV", "viewModel"]
@@ -65,8 +70,10 @@ depends-member:
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6VStackV", "highPriorityGesture"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
+- ["7SwiftUI4ViewP", "DragGesture"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -75,7 +82,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "dragGesture"]
 - !private ["7SwiftUI4ViewP", "environmentObject"]
+- !private ["7SwiftUI4ViewP", "highPriorityGesture"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI16_PreviewProviderP", "PremiumPage"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
@@ -87,9 +96,11 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- "7SwiftUI11DragGestureV"
 - "7SwiftUI15DynamicPropertyP"
 - "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
+- "7SwiftUI7GestureP"
 - !private "7Combine16ObservableObjectP"
 - "18PublishedToBinding11PremiumPageV"
 - "18PublishedToBinding20PremiumPage_PreviewsV"
@@ -132,4 +143,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c1ddaca0bf6120bb0c9320a6c92f17a9"
+interface-hash: "a875bd94910afdfb7a18413c4be11dc3"

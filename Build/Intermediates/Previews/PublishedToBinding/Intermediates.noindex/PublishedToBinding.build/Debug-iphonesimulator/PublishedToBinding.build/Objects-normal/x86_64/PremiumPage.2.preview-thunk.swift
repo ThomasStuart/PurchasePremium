@@ -4,7 +4,7 @@ import SwiftUI
 
 extension PremiumPage_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 32)
+        #sourceLocation(file: "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 30)
         AnyView(PremiumPage().environmentObject(PurchaseSuccessful()))
 #sourceLocation()
     }
@@ -12,18 +12,16 @@ extension PremiumPage_Previews {
 
 extension PremiumPage {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 17)
+        #sourceLocation(file: "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 17)
        
         
-        AnyView(VStack(spacing: __designTimeInteger("#8649.[1].[1].property.[0].[0].arg[0].value", fallback: 50) ){
-            Text(__designTimeString("#8649.[1].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Premium Page!"))
+        AnyView(VStack(spacing: __designTimeInteger("#13242.[1].[2].property.[0].[0].arg[0].value", fallback: 50) ){
+            Text(__designTimeString("#13242.[1].[2].property.[0].[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Premium Page!"))
             
-//            Button(action: {
-//                self.viewModel.isPremium = true
-//            }) {
-//                Text("Buy Monthly Membership")
+//            Toggle(isOn: $viewModel.isNotPremium) {
+//                Text("I agree to the terms and conditions")
 //            }
-        })
+        }   .highPriorityGesture(self.dragGesture))
 #sourceLocation()
     }
 }

@@ -10,9 +10,6 @@ provides-member:
 - ["18PublishedToBinding20PremiumPage_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AssignmentPrecedence"
-- !private "BooleanLiteralType"
-- !private "Button"
 - "EnvironmentObject"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
@@ -22,21 +19,21 @@ depends-top-level:
 - "PurchaseSuccessful"
 - !private "StringLiteralType"
 - !private "Text"
+- !private "Toggle"
 - !private "VStack"
 - "View"
 depends-member:
-- !private ["7SwiftUI6ButtonV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
-- !private ["7Combine16ObservableObjectP", "isPremium"]
+- !private ["7Combine16ObservableObjectP", "isNotPremium"]
 - ["18PublishedToBinding11PremiumPageV", "$viewModel"]
 - ["18PublishedToBinding11PremiumPageV", "Body"]
-- !private ["18PublishedToBinding11PremiumPageV", "Button"]
 - ["18PublishedToBinding11PremiumPageV", "EnvironmentObject"]
 - ["18PublishedToBinding11PremiumPageV", "PurchaseSuccessful"]
 - !private ["18PublishedToBinding11PremiumPageV", "Text"]
+- !private ["18PublishedToBinding11PremiumPageV", "Toggle"]
 - !private ["18PublishedToBinding11PremiumPageV", "VStack"]
 - ["18PublishedToBinding11PremiumPageV", "View"]
 - ["18PublishedToBinding11PremiumPageV", "_Default_Body"]
@@ -70,13 +67,15 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
 - !private ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
-- !private ["18PublishedToBinding18PurchaseSuccessfulC", "isPremium"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "isNotPremium"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6ToggleV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "$viewModel"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Button"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "Toggle"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -85,8 +84,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI17EnvironmentObjectV7WrapperV", "isNotPremium"]
+- !private ["7SwiftUI17EnvironmentObjectV7WrapperV", "subscript"]
 - !private ["7SwiftUI16_PreviewProviderP", "PremiumPage"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "PurchaseSuccessful"]
@@ -97,7 +97,6 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "7SwiftUI6ButtonV"
 - "7SwiftUI15DynamicPropertyP"
 - "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
@@ -107,9 +106,11 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - "18PublishedToBinding18PurchaseSuccessfulC"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI6ToggleV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI17EnvironmentObjectV7WrapperV"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:

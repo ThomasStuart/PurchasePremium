@@ -4,26 +4,24 @@ import SwiftUI
 
 extension PremiumPage_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 32)
-        AnyView(__designTimeSelection(PremiumPage().environmentObject(__designTimeSelection(PurchaseSuccessful(), "#8649.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#8649.[2].[0].property.[0].[0]"))
+        #sourceLocation(file: "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 30)
+        AnyView(__designTimeSelection(PremiumPage().environmentObject(__designTimeSelection(PurchaseSuccessful(), "#13242.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#13242.[2].[0].property.[0].[0]"))
 #sourceLocation()
     }
 }
 
 extension PremiumPage {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/Thomas_Stuart/Library/Mobile Documents/com~apple~CloudDocs/Desktop/XcodeProjects/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 17)
+        #sourceLocation(file: "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift", line: 17)
        
         
-        AnyView(__designTimeSelection(VStack(spacing: __designTimeInteger("#8649.[1].[1].property.[0].[0].arg[0].value", fallback: 50) ){
-            __designTimeSelection(Text(__designTimeString("#8649.[1].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Premium Page!")), "#8649.[1].[1].property.[0].[0].arg[1].value.[0]")
+        AnyView(__designTimeSelection(VStack(spacing: __designTimeInteger("#13242.[1].[2].property.[0].[0].arg[0].value", fallback: 50) ){
+            __designTimeSelection(Text(__designTimeString("#13242.[1].[2].property.[0].[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Premium Page!")), "#13242.[1].[2].property.[0].[0].arg[1].value.[0]")
             
-//            Button(action: {
-//                self.viewModel.isPremium = true
-//            }) {
-//                Text("Buy Monthly Membership")
+//            Toggle(isOn: $viewModel.isNotPremium) {
+//                Text("I agree to the terms and conditions")
 //            }
-        }, "#8649.[1].[1].property.[0].[0]"))
+        }   .highPriorityGesture(__designTimeSelection(self.dragGesture, "#13242.[1].[2].property.[0].[0].modifier[0].arg[0].value")), "#13242.[1].[2].property.[0].[0]"))
 #sourceLocation()
     }
 }
