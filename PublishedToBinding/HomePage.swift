@@ -20,7 +20,7 @@ struct HomePage: View {
                 NavigationLink(destination: ContentView(viewModel: viewModel).onAppear {
                     self.viewModel.resetCancel()
                 }) {
-                    Text("Show Detail View")
+                    Text("Record Video and Get Results")
                    
                 }
             }

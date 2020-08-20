@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "&&"
+- !private "BooleanLiteralType"
 - "ContentView"
 - "ContentView_Previews"
 - "DragGesture"
@@ -64,6 +65,7 @@ depends-member:
 - !private ["18PublishedToBinding8HomePageV", "deinit"]
 - !private ["18PublishedToBinding8HomePageV", "init"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "navigationBarHidden"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "isNotPremium"]
 - !private ["7Combine16ObservableObjectP", "userCancelled"]
@@ -98,6 +100,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]

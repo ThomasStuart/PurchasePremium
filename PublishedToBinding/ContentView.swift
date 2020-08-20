@@ -22,10 +22,10 @@ struct ContentView: View {
             HomePage(viewModel: viewModel)
         }
         else {
-              Text("Score Landing Page")
+              Text("Thanks for buying a subscription, heres your results")
               NavigationLink(destination: HomePage(viewModel: viewModel) ){
-                    Text("Show Detail View")
-             }
+                    Text("Go Back to home page")
+            }.navigationBarHidden(true)
         }
         
       }
