@@ -15,18 +15,18 @@ struct ContentView: View {
       @ViewBuilder              // no need return inside
       var body: some View {
         
-        if viewModel.isNotPremium && !viewModel.userCancelled {
-            PremiumPage(viewModel: viewModel)
-          }
-        else if (viewModel.isNotPremium && viewModel.userCancelled){
-            HomePage(viewModel: viewModel)
-        }
-        else {
-              Text("Thanks for buying a subscription, heres your results")
-              NavigationLink(destination: HomePage(viewModel: viewModel) ){
-                    Text("Go Back to home page")
-            }.navigationBarHidden(true)
-        }
+            if !viewModel.isPremium && !viewModel.userCancelled {
+                PremiumPage(viewModel: viewModel)
+              }
+            else if( !viewModel.isPremium && viewModel.userCancelled){
+                HomePage(viewModel: viewModel)
+            }
+            else {
+                  Text("Thanks for buying a subscription, heres your results")
+                  NavigationLink(destination: HomePage(viewModel: viewModel) ){
+                        Text("Go Back to home page")
+                }.navigationBarHidden(true)
+            }
         
       }
     

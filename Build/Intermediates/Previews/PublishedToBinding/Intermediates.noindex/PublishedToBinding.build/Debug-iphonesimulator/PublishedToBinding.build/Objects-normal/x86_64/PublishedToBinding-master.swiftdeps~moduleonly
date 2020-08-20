@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "a55267bec472c34bc3d94c4c8c0f7202"
+build_time: [1597948299, 549888000]
+inputs:
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/Subscribe.swift": [1597948299, 492812798]
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/HomePage.swift": [1597948099, 531151514]
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/PremiumPage.swift": [1597885610, 953948154]
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/AppDelegate.swift": [1597878043, 478227592]
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/SceneDelegate.swift": [1597886440, 183597484]
+  "/Users/Thomas_Stuart/Desktop/PublishedToBinding/PublishedToBinding/ContentView.swift": [1597948144, 521903821]

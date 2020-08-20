@@ -21,7 +21,6 @@ struct HomePage: View {
                     self.viewModel.resetCancel()
                 }) {
                     Text("Record Video and Get Results")
-                   
                 }
             }
         }

@@ -10,13 +10,13 @@ import SwiftUI
 import Combine
 
 final class PurchaseSuccessful: ObservableObject {
-    @Published var isNotPremium = true
+    @Published var isPremium     = false
     @Published var userCancelled = false
     
     func buyMembership() {
         // login request... on success:
         print("buy membership clicked")
-        self.isNotPremium = false
+        self.isPremium = true
     }
 
     func cancel() {
