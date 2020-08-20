@@ -1,0 +1,167 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TabView"
+- "HomePage_Previews"
+provides-nominal:
+- "18PublishedToBinding7TabViewV"
+- "18PublishedToBinding17HomePage_PreviewsV"
+provides-member:
+- ["18PublishedToBinding7TabViewV", ""]
+- ["18PublishedToBinding17HomePage_PreviewsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "BooleanLiteralType"
+- "HomePage_Previews"
+- !private "NavigationLink"
+- !private "NavigationView"
+- "ObservedObject"
+- "PreviewProvider"
+- "PurchaseSuccessful"
+- !private "ScoreLanding"
+- "State"
+- !private "StringLiteralType"
+- "TabView"
+- !private "Text"
+- "View"
+depends-member:
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["SQ", "init"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "Previews"]
+- !private ["18PublishedToBinding17HomePage_PreviewsV", "PurchaseSuccessful"]
+- !private ["18PublishedToBinding17HomePage_PreviewsV", "TabView"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "View"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_Default_Previews"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_platform"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "_previews"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "deinit"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "init"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "platform"]
+- ["18PublishedToBinding17HomePage_PreviewsV", "previews"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationLinkV", "isDetailLink"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "resetCancel"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "PurchaseSuccessful"]
+- !private ["7SwiftUI15PreviewProviderP", "TabView"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "deinit"]
+- ["18PublishedToBinding18PurchaseSuccessfulC", "init"]
+- !private ["18PublishedToBinding18PurchaseSuccessfulC", "resetCancel"]
+- !private ["18PublishedToBinding12ScoreLandingV", "deinit"]
+- !private ["18PublishedToBinding12ScoreLandingV", "environmentObject"]
+- !private ["18PublishedToBinding12ScoreLandingV", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "wrappedValue"]
+- ["18PublishedToBinding7TabViewV", "$isActive"]
+- ["18PublishedToBinding7TabViewV", "$viewModel"]
+- ["18PublishedToBinding7TabViewV", "Body"]
+- ["18PublishedToBinding7TabViewV", "Bool"]
+- !private ["18PublishedToBinding7TabViewV", "NavigationLink"]
+- !private ["18PublishedToBinding7TabViewV", "NavigationView"]
+- ["18PublishedToBinding7TabViewV", "ObservedObject"]
+- ["18PublishedToBinding7TabViewV", "PurchaseSuccessful"]
+- !private ["18PublishedToBinding7TabViewV", "ScoreLanding"]
+- ["18PublishedToBinding7TabViewV", "State"]
+- !private ["18PublishedToBinding7TabViewV", "Text"]
+- ["18PublishedToBinding7TabViewV", "View"]
+- ["18PublishedToBinding7TabViewV", "_Default_Body"]
+- !private ["18PublishedToBinding7TabViewV", "_isActive"]
+- ["18PublishedToBinding7TabViewV", "_makeView"]
+- ["18PublishedToBinding7TabViewV", "_makeViewList"]
+- !private ["18PublishedToBinding7TabViewV", "_viewModel"]
+- ["18PublishedToBinding7TabViewV", "body"]
+- ["18PublishedToBinding7TabViewV", "deinit"]
+- ["18PublishedToBinding7TabViewV", "init"]
+- ["18PublishedToBinding7TabViewV", "isActive"]
+- ["18PublishedToBinding7TabViewV", "viewModel"]
+- !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI4ViewP", "$isActive"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- ["7SwiftUI4ViewP", "PurchaseSuccessful"]
+- !private ["7SwiftUI4ViewP", "ScoreLanding"]
+- ["7SwiftUI4ViewP", "State"]
+- !private ["7SwiftUI4ViewP", "Text"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "isDetailLink"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI4ViewP", "onAppear"]
+- !private ["7SwiftUI4ViewP", "viewModel"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "PurchaseSuccessful"]
+- !private ["7SwiftUI16_PreviewProviderP", "TabView"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+depends-nominal:
+- "7SwiftUI15DynamicPropertyP"
+- !private "SQ"
+- "18PublishedToBinding17HomePage_PreviewsV"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
+- "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
+- "7SwiftUI15PreviewProviderP"
+- "18PublishedToBinding18PurchaseSuccessfulC"
+- !private "18PublishedToBinding12ScoreLandingV"
+- "7SwiftUI5StateV"
+- "18PublishedToBinding7TabViewV"
+- !private "7SwiftUI4TextV"
+- "7SwiftUI4ViewP"
+- "7SwiftUI16_PreviewProviderP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "520551a1d2840430f9dec3b9639aeba6"

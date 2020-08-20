@@ -15,7 +15,6 @@ struct ContentView: View {
       @ViewBuilder
       var body: some View {
         
-        //Text("hello")
         if !self.viewModel.isPremium && !self.viewModel.userCancelled {
             PremiumPage(shouldPopToRootView: self.$rootIsActive).environmentObject(viewModel)
         }
