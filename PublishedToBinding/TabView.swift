@@ -16,7 +16,7 @@ struct TabView: View {
         
         NavigationView{
             
-            NavigationLink(destination: ScoreLanding(ria: self.$isActive).environmentObject(viewModel).onAppear(){ self.viewModel.resetCancel()}  ,isActive: self.$isActive ){
+            NavigationLink(destination: ScoreLanding(ria: self.$isActive).environmentObject(viewModel).onAppear(){ self.viewModel.resetCancel() }  ,isActive: self.$isActive ){
                 Text("Record  Video")
             }.isDetailLink(false)
             .navigationBarTitle("Root Navigation Bar")

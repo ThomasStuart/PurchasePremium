@@ -16,7 +16,7 @@ extension TabView {
         
         AnyView(NavigationView{
             
-            NavigationLink(destination: ScoreLanding(ria: self.$isActive).environmentObject(viewModel).onAppear(){ self.viewModel.resetCancel()}  ,isActive: self.$isActive ){
+            NavigationLink(destination: ScoreLanding(ria: self.$isActive).environmentObject(viewModel).onAppear(){ self.viewModel.resetCancel() }  ,isActive: self.$isActive ){
                 Text(__designTimeString("#13346.[1].[2].property.[0].[0].arg[0].value.[0].arg[2].value.[0].arg[0].value.[0].value", fallback: "Record  Video"))
             }.isDetailLink(__designTimeBoolean("#13346.[1].[2].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value", fallback: false))
             .navigationBarTitle(__designTimeString("#13346.[1].[2].property.[0].[0].arg[0].value.[0].modifier[1].arg[0].value.[0].value", fallback: "Root Navigation Bar"))
